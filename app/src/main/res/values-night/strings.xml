@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="class_dependency_injection">Class Dependency Injection</string>
+    <string name="interface_dependency_injection">Interface Dependency Injection</string>
+    <string name="bind_amp_binds_example"><![CDATA[Bind & Binds example]]></string>
+    <string name="viewmodel">ViewModel</string>
+    <string name="retrofit">Retrofit</string>
+    <string name="room">Room</string>
+    <string name="scopes">Scopes</string>
+</resources>
