@@ -51,5 +51,7 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    implementation("io.insert-koin:koin-android:4.0.0")
+
 
 }

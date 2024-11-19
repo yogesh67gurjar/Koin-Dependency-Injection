@@ -27,6 +27,13 @@
             android:text="@string/interface_dependency_injection" />
 
         <Button
+            android:id="@+id/qualifiersBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/qualifiers" />
+
+        <Button
             android:id="@+id/bindBindsBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
