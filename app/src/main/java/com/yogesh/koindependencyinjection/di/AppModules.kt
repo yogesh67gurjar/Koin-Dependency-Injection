@@ -1,13 +1,10 @@
 package com.yogesh.koindependencyinjection.di
 
-import android.graphics.ColorSpace
 import com.yogesh.koindependencyinjection.bind_binds_example.AppDeveloper
 import com.yogesh.koindependencyinjection.bind_binds_example.AppDeveloperImpl
 import com.yogesh.koindependencyinjection.bind_binds_example.Engineer
 import com.yogesh.koindependencyinjection.bind_binds_example.Singer
-import com.yogesh.koindependencyinjection.bind_binds_example.SingerImpl
 import com.yogesh.koindependencyinjection.bind_binds_example.Student
-import com.yogesh.koindependencyinjection.bind_binds_example.StudentImpl
 import com.yogesh.koindependencyinjection.bind_binds_example.StudentSingerImpl
 import com.yogesh.koindependencyinjection.bind_binds_example.StudentWhoSings
 import com.yogesh.koindependencyinjection.class_dependency_injection.Car
@@ -15,6 +12,8 @@ import com.yogesh.koindependencyinjection.class_dependency_injection.Engine
 import com.yogesh.koindependencyinjection.class_dependency_injection.Wheel
 import com.yogesh.koindependencyinjection.interface_dependency_injection.TwoWheeler
 import com.yogesh.koindependencyinjection.interface_dependency_injection.TwoWheelerImpl
+import com.yogesh.koindependencyinjection.viewmodel_example.MyViewModel
+import org.koin.core.module.dsl.viewModel
 import org.koin.core.qualifier.named
 import org.koin.dsl.bind
 import org.koin.dsl.binds
@@ -51,4 +50,10 @@ val bindBindsModule = module {
 
     single { StudentSingerImpl() } binds arrayOf(Student::class, Singer::class)
     factory { StudentWhoSings(student = get(), singer = get()) }
+}
+
+val viewModelModule = module {
+    viewModel {
+        MyViewModel()
+    }
 }

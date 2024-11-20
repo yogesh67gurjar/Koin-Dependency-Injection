@@ -8,6 +8,7 @@ import com.yogesh.koindependencyinjection.class_dependency_injection.ui.ClassDep
 import com.yogesh.koindependencyinjection.databinding.ActivityMainBinding
 import com.yogesh.koindependencyinjection.interface_dependency_injection.ui.InterfaceDependencyInjectionActivity
 import com.yogesh.koindependencyinjection.qualifiers.QualifiersActivity
+import com.yogesh.koindependencyinjection.viewmodel_example.ui.ViewModelActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -34,6 +35,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.qualifiersBtn.setOnClickListener {
             startActivity(Intent(this@MainActivity, QualifiersActivity::class.java))
+        }
+
+        binding.viewModelBtn.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ViewModelActivity::class.java))
         }
     }
 
