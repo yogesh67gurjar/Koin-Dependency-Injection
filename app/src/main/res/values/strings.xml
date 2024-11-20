@@ -12,4 +12,6 @@
     <string name="start_trip">Start Trip</string>
     <string name="base_url_one">Base Url One</string>
     <string name="base_url_two">Base Url Two</string>
+    <string name="bind_one_interface">Bind One Interface</string>
+    <string name="binds_two_interface">Binds Two Interface</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.yogesh.koindependencyinjection
 
 import android.app.Application
+import com.yogesh.koindependencyinjection.di.bindBindsModule
 import com.yogesh.koindependencyinjection.di.classModule
 import com.yogesh.koindependencyinjection.di.interfaceModule
 import com.yogesh.koindependencyinjection.di.qualifiersModule
@@ -14,7 +15,7 @@ class MyApp : Application() {
 
         startKoin {
             androidContext(this@MyApp)
-            modules(classModule, interfaceModule, qualifiersModule)
+            modules(classModule, interfaceModule, qualifiersModule, bindBindsModule)
         }
     }
 
